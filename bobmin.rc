@@ -1,0 +1,354 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About BoBaFeTT's Mini Diablo Trainer..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "BoBaFeTT's Mini Diablo Trainer 6.7",IDC_STATIC,57,7,113,
+                    8,SS_NOPREFIX
+    LTEXT           "©2001 Great_BoBaFeTT@hotmail.com",IDC_STATIC,50,17,129,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,196,7,32,14,WS_GROUP
+    LTEXT           "Thanks to all battle.net players!",IDC_STATIC,7,96,99,8
+    EDITTEXT        IDC_INFO,7,32,220,60,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_BOBMIN_DIALOG DIALOGEX 0, 0, 291, 187
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | DS_NOFAILCREATE | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "BoBaFeTT's Mini Diablo Trainer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Save",IDC_SAVE,13,62,50,14
+    PUSHBUTTON      "&Restore",IDC_RESTORE,13,79,50,14
+    PUSHBUTTON      "&Items",IDC_ITEMS,14,112,50,14
+    PUSHBUTTON      "&Character",IDC_CHARACTER,14,129,50,14
+    PUSHBUTTON      "Add On &1",IDC_ADDON1,13,161,50,14
+    PUSHBUTTON      "Add On &2",IDC_ADDON2,67,161,50,14
+    PUSHBUTTON      "Add On &3",IDC_ADDON3,121,161,50,14
+    PUSHBUTTON      "Add On &4",IDC_ADDON4,175,161,50,14
+    PUSHBUTTON      "Add On &5",IDC_ADDON5,229,161,50,14
+    CTEXT           "To use this trainer, you must run Diablo v1.05, Diablo v1.07 or Diablo 1.08 and ALT-TAB to Windows. Run this trainer and use it as you wish. I am not responsible for what you do with this trainer nor any damages to your computer or Diablo.",
+                    IDC_STATIC,11,16,265,25
+    LTEXT           "Saves your character to a 20.5k .CHA file.",IDC_STATIC,
+                    69,65,134,8
+    LTEXT           "Restores a saved .CHA file to memory.",IDC_STATIC,69,82,
+                    122,8
+    LTEXT           "Changes your character's items.",IDC_STATIC,69,115,101,
+                    8
+    LTEXT           "Changes your character stats.",IDC_STATIC,70,132,95,8
+    GROUPBOX        "Read And Understand:",IDC_STATIC,7,7,275,40,BS_CENTER
+    GROUPBOX        "Backup",IDC_STATIC,7,50,275,48
+    GROUPBOX        "Character",IDC_STATIC,7,100,275,48
+    GROUPBOX        "Add-Ons",IDC_STATIC,7,151,276,29
+END
+
+IDD_CHARSEL DIALOGEX 0, 0, 125, 82
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Please Select a Character"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Ok",IDOK,5,62,40,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,77,62,40,14
+    CONTROL         "Empty",IDC_CHAR1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,15,14,90,10
+    CONTROL         "Empty",IDC_CHAR2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,15,24,90,10
+    CONTROL         "Empty",IDC_CHAR3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,15,34,90,10
+    CONTROL         "Empty",IDC_CHAR4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,15,44,90,10
+    GROUPBOX        "",IDC_STATIC,7,7,110,52
+END
+
+IDD_ITEM DIALOGEX 0, 0, 239, 79
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | DS_NOFAILCREATE | DS_CENTER | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Item Trader"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Ok",IDOK,182,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,182,24,50,14
+    PUSHBUTTON      "&Import Item",IDC_IMPORT,182,41,50,14
+    PUSHBUTTON      "&Export Item",IDC_EXPORT,182,58,50,14
+    LISTBOX         IDC_ITEMS,7,7,166,65,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+END
+
+IDD_CHARACTER DIALOGEX 0, 0, 245, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Character Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME,33,7,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEVELUP,166,22,70,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_CLASS,33,36,70,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EXP,166,36,70,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LEVEL,166,8,70,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STR,49,55,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DEX,49,69,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LIFE,49,83,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAG,141,55,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_VIT,141,69,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MANA,141,83,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STRCUR,77,55,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_DEXCUR,77,69,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_LIFECUR,77,83,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_MAGCUR,169,55,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_VITCUR,169,69,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        IDC_MANACUR,169,83,25,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "&Save",IDC_SAVE,197,59,40,14
+    PUSHBUTTON      "&Cancel",IDC_CANCEL,197,78,40,14
+    LTEXT           "Name:",IDC_STATIC,9,9,22,8
+    LTEXT           "Class:",IDC_STATIC,9,38,20,8
+    LTEXT           "Level:",IDC_STATIC,110,10,20,8
+    LTEXT           "Level Up Points:",IDC_STATIC,108,25,53,8
+    LTEXT           "Experience:",IDC_STATIC,108,38,38,8
+    LTEXT           "Strength:",IDC_STATIC,9,58,30,8
+    LTEXT           "Dexterity:",IDC_STATIC,9,71,30,8
+    LTEXT           "Life:",IDC_STATIC,11,85,14,8
+    LTEXT           "Magic:",IDC_STATIC,111,58,22,8
+    LTEXT           "Vitality:",IDC_STATIC,111,71,23,8
+    LTEXT           "Mana:",IDC_STATIC,111,85,21,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,51,229,1
+    CONTROL         "Permanent Name Change",IDC_PERMNAME,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,8,23,95,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_BOBMIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_CHARSEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_CHARACTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CHARACTER DLGINIT
+BEGIN
+    IDC_CLASS, 0x403, 13, 0
+0x3030, 0x2d20, 0x5720, 0x7261, 0x6972, 0x726f, "\000" 
+    IDC_CLASS, 0x403, 11, 0
+0x3130, 0x2d20, 0x5220, 0x676f, 0x6575, "\000" 
+    IDC_CLASS, 0x403, 14, 0
+0x3230, 0x2d20, 0x5320, 0x726f, 0x6563, 0x6f72, 0x0072, 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\bobmin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bobmin.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,7,0,0
+ PRODUCTVERSION 6,7,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "By Great_BoBaFeTT@hotmail.com\0"
+            VALUE "CompanyName", "BoBaFeTT\0"
+            VALUE "FileDescription", "BoBaFeTT's Mini Diablo Trainer\0"
+            VALUE "FileVersion", "6.7\0"
+            VALUE "InternalName", "BoBaFeTT's Mini Diablo Trainer\0"
+            VALUE "LegalCopyright", "©2001 Great_BoBaFeTT@hotmail.com\0"
+            VALUE "LegalTrademarks", "http://www.greatbobafett.com\0"
+            VALUE "OriginalFilename", "BoBaMiNi.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "BoBaFeTT's Mini Diablo Trainer Application\0"
+            VALUE "ProductVersion", "6.7\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\bobmin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
